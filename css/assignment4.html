@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Flipkart Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5rem 1rem;
+            border: 2px solid black;
+            background-color: antiquewhite;
+        }
+        nav img.logo {
+            height: 80px;
+        }
+        .search {
+            flex: 1;
+            margin: 0 1rem;
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 4px;
+            padding: 0 0.5rem;
+        }
+        .search img {
+            height: 20px;
+            width: 20px;
+        }
+        .search input {
+            border: none;
+            outline: none;
+            padding: 0.5rem;
+            flex: 1;
+        }
+        .nav-items {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+        .nav-items div {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 0.3rem 0.5rem;
+            border-radius: 4px;
+            transition: background 0.2s ease;
+        }
+        .nav-items div:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .nav-items div img {
+            height: 24px;
+            width: 24px;
+            object-fit: contain;
+            margin-right: 0.5rem;
+        }
+        .second_nav {
+            height: 100px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 10px;
+            margin: 20px 30px 0 30px;
+            border: 2px solid black;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 0 10px;
+            background-color: antiquewhite;
+        }
+        .second_nav div {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 auto;
+        }
+        .second_nav div img {
+            height: 80px;
+            width: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.2s ease;
+        }
+        .second_nav div img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="flipkart-logo-svgrepo-com.svg" class="logo" alt="Flipkart Logo" />
+        <div class="search">
+            <img src="search.png" alt="Search Icon">
+            <input type="text" placeholder="Search for products, brands and more" />
+        </div>
+        <div class="nav-items">
+            <div class="login"><img src="login.png" alt="Login Icon"><span>Login</span></div>
+            <div class="cart"><img src="icons8-cart-50.png" alt="Cart Icon"><span>Cart</span></div>
+            <div class="seller"><img src="icons8-seller-64.png" alt="Seller Icon"><span>Become a seller</span></div>
+        </div>
+    </nav>
+
+    <div class="second_nav">
+        <div><img src="pexels-craytive-2720447.jpg" alt="Product 1"></div>
+        <div><img src="pexels-valeri-mak-2319397-3989394.jpg" alt="Product 2"></div>
+        <div><img src="pexels-craytive-2720447.jpg" alt="Product 3"></div>
+        <div><img src="pexels-valeri-mak-2319397-3989394.jpg" alt="Product 4"></div>
+        <div><img src="pexels-craytive-2720447.jpg" alt="Product 5"></div>
+        <div><img src="pexels-valeri-mak-2319397-3989394.jpg" alt="Product 6"></div>
+        <div><img src="pexels-valeri-mak-2319397-3989394.jpg" alt="Product 7"></div>
+        <div><img src="pexels-valeri-mak-2319397-3989394.jpg" alt="Product 8"></div>
+    </div>
+</body>
+</html>
