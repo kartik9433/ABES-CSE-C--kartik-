@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+              height: 300px;
+              width: 300px;
+              border: solid 2px black;
+              background-color: lightblue;
+              border-radius: 10%;
+        }
+        .counter{
+            height: 70px;
+           display: flex;
+           justify-content: space-evenly;  
+        }
+        .screen{
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .buttons{
+            height: 280px;
+            position: relative;
+            left: 80px;
+            top: 100px;
+        }
+        button{
+          background-color: black;
+          color: aqua;
+          height: 30px;
+          width: 70px;
+          border-radius: 12%;
+        }
+        input{
+            height: 40px;
+            cursor: not-allowed;
+            border-radius: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+         <div class="counter"><img src="" ><h2>Counter App</h2></div>
+         <div class="screen"><input type="text" id="inp" value="0" placeholder="0" style="display: flex;
+         justify-content: center; align-items: center ;"></div>
+          <div class="buttons">
+            <button onclick="increment()" >count++</button>
+            <button onclick="decrement()" >count--</button>
+          </div>
+    </div>
+    <script>
+          function increment(){
+
+            document.getElementById("inp").innerHTML = document.getElementById("inp").value++;
+            let val =  document.getElementById("inp").value
+            if(val == 10){
+                alert("danger")
+            }
+          }
+          function decrement(){
+            document.getElementById("inp").value  = document.getElementById("inp").value--;
+                        let val =  document.getElementById("inp").value
+              if(val== 0){
+                alert("danger");
+              }
+          }
+    </script>
+</body>
+</html>
