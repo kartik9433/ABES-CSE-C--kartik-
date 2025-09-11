@@ -4,23 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .adi{
+            background-color: lightblue;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
 </head>
 <body>
+    <div class="adi">
+            <button onclick="show()">click here!</button>
+         </div>
     <script>
         // function abes(){
         //    document.write("we are student of abes");
         // }
         // abes();
         
-        function add(){
-            document.write(10+20);
-        }
-        add();
+        // function add(){
+        //     document.write(10+20);
+        // }
+        // add();
 
-         function sub(){
-            document.write(10-20);
+        //  function sub(){
+        //     document.write(10-20);
+        // }
+        // sub();
+        function show(){
+            document.getElementsByClassName(".adi").innerHtml = "hello";
         }
-        sub();
+         
     </script>
 </body>
 </html>

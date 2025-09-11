@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #adi{
+            display: inline;
+        }
+    </style>
+</head>
+<body id="adi">
+    <div id="ad1">
+     <button onclick="black()">black</button>
+    <button onclick="red()">red</button>
+    <button onclick="green()">green</button>
+    </div>
+
+    <script>
+        function black(){
+            document.getElementById("adi").style.backgroundColor = "black";
+        }
+        function red(){
+            document.getElementById("adi").style.backgroundColor = "red";
+        }
+        function green(){
+            document.getElementById("adi").style.backgroundColor = "green";
+        }
+    </script>
+</body>
+</html>
