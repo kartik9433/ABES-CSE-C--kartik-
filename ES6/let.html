@@ -6,7 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="adi"></p>
+   <div>
+         <input type="text" placeholder="enter anything" id="inp" >
+           <button onclick={show()} >click</button>
+    </div>
+ 
+    <!-- <p id="adi"></p> -->
        <script>
         // var x  = 10;
         // var x  = 2;
@@ -30,7 +35,11 @@
         // }
         //       document.write(multiply(5));
 
-        
+          function show (){
+               const val = document.getElementById("inp").value;
+               document.write(val);
+          }
+
        </script>
 </body>
 </html>
