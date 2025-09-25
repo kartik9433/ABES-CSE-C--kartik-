@@ -14,14 +14,23 @@
         // console.log("third");
         // console.log("fourth");
 
-          function sum(a,b){
-               console.log(a+b);
-          }
+        //   function sum(a,b){
+        //        console.log(a+b);
+        //   }
 
-          function cal(a,b,sumCallback){
-              sumCallback(a,b);
-          }
-            cal(10,20,sum);
+        //   function cal(a,b,sumCallback){
+        //       sumCallback(a,b);
+        //   }
+        //     cal(10,20,sum);
+
+        function getData(dataid){
+             setTimeout(()=>{
+               console.log("data",dataid);
+             },2000)
+        }
+
+        getData(1);
+        getData(2);
 
     </script>
 </body>
