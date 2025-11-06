@@ -1,0 +1,23 @@
+#book{
+     width: 270px;
+    height: 320px;
+   border: solid 1px black;
+   box-shadow: 2px 2px 3px grey;
+   align-items: center;
+   gap: 1.25rem;
+   margin: 10px
+}
+#book img{
+    width: 200px;
+    height: 150px;
+      margin-left: 20px;
+}
+h1,h2{
+    margin-left: 70px;
+}
+.btn{
+    margin-left: 80px;
+}
+.btn span{
+      margin: 10px;
+}
